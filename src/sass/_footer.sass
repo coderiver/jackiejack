@@ -1,0 +1,98 @@
+.footer
+	.in
+		box-shadow: inset 2px 0 0 #f4f4f4,inset -2px 0 0 #f4f4f4
+	&__bottom
+		border-top: 1px solid #EFEFEF 
+		text-align: center
+		font-size: 9px 
+		color: #868686 
+		line-height: 1.1 
+		padding: 18px 20px 20px 20px 
+	&__top
+		+clr
+	&__icons
+		float: right
+		width: 217px 
+		min-height: 215px 
+		text-align: center
+		padding-top: 25px 
+		border-left: 2px solid #fafafa 
+		+box
+		.footer__iconsimg
+			+s(footer)
+			display: inline-block
+	&__help
+		width: 217px 
+		border-right: 2px solid #fafafa 
+		min-height: 215px 
+		padding: 24px 0 0 27px 
+		float: left
+		+box
+		h3
+			font-size: 11px 
+			font-weight: 900 
+			color: #000 
+			text-transform: uppercase
+			margin-bottom: 14px 
+		ul
+			list-style: none
+			color: #bcbcbc 
+			li
+				margin-bottom: 12px 
+			a
+				color: #bcbcbc 
+				text-decoration: none
+				&:hover
+					color: #000
+					text-decoration: underline
+	.footer__about
+		float: left
+		width: 327px 
+		margin-left: 50px 
+		text-align: center
+		padding-top: 33px 
+		a
+			font-size: 11px 
+			color: #bcbcbc 
+			margin: 0 6px 
+			text-decoration: none
+			&:hover
+				color: #000 
+		.footer__logo
+			+s(flogo)
+			display: block
+			margin:  0 auto 
+			margin-bottom: 22px 
+		.footer__copy
+			font-family: serif 
+			color: #bcbcbc 
+			font-style: italic
+.signup
+	margin: 26px 0 20px 0 
+	background: #f6f6f6
+	height: 27px  
+	line-height: normal 
+	border-radius: 27px
+	position: relative
+	.signup__go
+		position: absolute
+		right: 12px 
+		top: 6px
+		appearance: none
+		background: transparent 
+	&__icon
+		position: absolute
+		left: 14px 
+		top: 8px 
+		color: #b3b3b3 
+	input[type=text]
+		position: absolute
+		width: 236px 
+		height: 27px 
+		line-height: normal 
+		font-family: serif 
+		font-size: 11px 
+		font-style: italic 
+		left: 40px 
+		top: 0
+		background: transparent  

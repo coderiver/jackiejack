@@ -1,0 +1,86 @@
+.promo
+	.promo__in
+		border-bottom: 1px solid #E5E5E5
+		border-right: 2px solid #E5E5E5
+		border-left: 2px solid #E5E5E5
+		padding: 18px 70px 12px 70px
+	.promo__prev,.promo__next
+		position: absolute
+		left: 20px
+		top: 40px
+		// border: 1px solid #ECECEC 
+		// width: 25px 
+		// height: 25px 
+		// cursor: pointer
+		// z-index: 100 
+		color: #dcdcdc 
+		font-size: 30px 
+		// &:before
+		// 	content: ' '
+		// 	position: absolute
+		// 	top: 50%
+		// 	left: 50%  
+		// 	+s(prev)
+		// 	margin-top: -4px 
+		// 	margin-left: -4px 
+		&:hover
+			color: #000 
+	.promo__next
+		position: absolute
+		right: 20px
+		left: auto 
+		transform: rotate(180deg)
+		// &:before
+		// 	+s(next)
+	.promo__slide
+		display: inline-block
+		width: 245px 
+		+box
+		padding-right: 10px 
+		.promo__icon
+			float: left
+			margin-right: 12px
+			&.promo__video
+				position: relative
+				&:before
+					background: rgba(#2e5ead,.5) 
+					content: "" 
+					position: absolute
+					left: 0
+					top: 0
+					width: 100%   
+					height: 100% 
+					z-index: 10 
+					border-radius: 10px
+				i
+					// +s(play)
+					position: absolute
+					left: 20px
+					top: 20px
+					z-index: 20 
+					@extend %icon
+					@extend .icon-play
+					color: #fff 
+					font-size: 33px 
+		.promo__text
+			padding-top: 5px 
+		.promo__price
+			font-size: 12px 
+			font-weight: 900 
+			color: #222222 
+			margin-bottom: 1px 
+		.promo__title
+			color: #222222 
+			font-size: 11px 
+			white-space: nowrap
+			font-weight: 600 
+		.promo__date
+			display: inline-block
+			font-size: 11px
+		.promo__game
+			font-family: serif 
+			color: #b8b8b8 
+			display: inline-block
+			margin-top: 2px 
+			font-style: italic 
+			font-size: 11px 

@@ -1,0 +1,126 @@
+.content
+	background: #2250a7 
+	.in
+		background: #fff 
+.gnav
+	border-bottom: 1px solid #E6EBF6 
+	.gnav__section
+		float: left
+		width: 25%
+		// box-shadow: inset -2px 0 0 #f7f7f7
+		min-height: 107px 
+		text-align: center
+		padding: 27px 0 21px 0
+		+box 
+		font-size: 10px 
+		color: #222222 
+		text-decoration: none
+		font-weight: 100
+		position: relative
+		cursor: pointer
+		&:last-child
+			box-shadow: none
+		&:before
+			content: "" 
+			position: absolute
+			right: 0
+			top: 0 
+			width: 2px  
+			height: 100%
+			background: #ececec  
+	.gnav__iconwrap
+		min-height: 35px 
+		margin-bottom: 7px 
+	.gnav__icon
+		display: inline-block
+		font-size: 30px 
+		color: #d5d5d5 
+		&.icon1
+			+s(top)
+		&.icon2
+			+s(joystick)
+		&.icon3
+			+s(cardheart)
+		&.icon4
+			+s(bag)
+	.is-active
+		.gnav__icon
+			color: #214ea2 
+.gamewrap
+	+clr
+.game
+	float: left
+	width: 25%
+	position: relative 
+	text-decoration: none
+	border-bottom: 1px solid #ECECEC 
+	+box
+	&:nth-child(4n)
+		&:before
+			display: none
+	.game__over
+		display: none
+	img
+		display: block
+		width: 100%
+	&:before
+		content: "" 
+		position: absolute
+		right: 0
+		width: 2px  
+		height: 100%
+		background: #ececec  
+	&:hover
+		.game__over
+			display: block
+	.game__over
+		display: none
+		position: absolute
+		left: 0
+		top: 0
+		// right: 2px 
+		width: 100% 
+		height: 100%
+		background: rgba(#224EA2,.95)
+		padding-top: 12px 
+		text-align: center
+		+box
+		.game__title
+			font-size: 11px 
+			color: #fff 
+			display: block 
+			margin-bottom: 7px 
+		.game__spilnu
+			font-weight: 900 
+			font-style: italic 
+			color: #fff 
+			font-size: 11px 
+			display: block
+			margin-bottom: 8px 
+		.game__icon
+			display: inline-block
+			width: 44px 
+			height: 44px 
+			border: 6px solid #168CD7 
+			border-radius: 50%
+			margin-bottom: 5px 
+			position: relative
+			&:before
+				content: "" 
+				position: absolute
+				+s(playmore)
+				left: 16px 
+				top: 13px 
+				
+		.game__play
+			height: 27px 
+			padding: 0 20px
+			line-height: 27px
+			font-style: italic 
+			font-family: serif
+			color: #868686  
+			background: #ececec 
+			border-radius: 20px
+			font-size: 11px 
+			display: inline-block
+				

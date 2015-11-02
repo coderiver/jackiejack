@@ -1,0 +1,123 @@
+.jackpots
+	background: #f4f5f7
+	padding-top: 34px 
+	text-align: center
+	border-bottom: 1px solid #EDEDED 
+	padding-bottom: 75px 
+	overflow: hidden
+	position: relative
+	h3
+		margin: 0 0 0 34px
+		font-weight: 900  
+		text-transform: uppercase
+		color: #222222 
+		font-size: 11px 
+		text-align: left
+		margin-bottom: 52px 
+	&__number
+		font-size: 72px 
+		color: #222222 
+		font-weight: 900 
+		text-align: center
+		line-height: 1 
+		position: relative
+		z-index: 2 
+		margin-bottom: 10px 
+	.jackpots__go
+		@extend %button1
+		position: relative
+		z-index: 3 
+	&__text
+		font-size: 175px 
+		color: #eaeaec 
+		font-weight: 900
+		text-transform: uppercase 
+		position: absolute
+		left: -.05em 
+		top: 50px 
+		line-height: 1em 
+.jacks
+	+clr
+	.jacks__top
+		position: absolute
+		right: 26px 
+		top: 30px 
+		@extend %icon
+		@extend .icon-arrow
+		font-size: 30px 
+		color: #ededed 
+		transform: rotate(90deg)
+	.col
+		float: left
+		width: 50% 
+		position: relative
+		+box
+		border-right: 1px solid #DDD 
+		padding-top: 31px 
+		padding-bottom: 20px 
+	h2
+		margin-bottom: 13px  
+		text-align: center
+		font-size: 16px 
+		font-weight: 900 
+		color: #224ea2
+		text-transform: uppercase
+	.jacks__more
+		text-align: right
+		margin-right: 30px 
+		font-size: 11px 
+		font-style: italic
+		color: #b8b8b8 
+		font-family: serif 
+		i
+			
+			vertical-align: middle
+			display: inline-block
+			margin-left: 10px 
+			@extend %icon
+			@extend .icon-arrow
+			font-size: 30px 
+			color: #ededed 
+			transform: rotate(-90deg)
+.jack
+	padding: 12px 30px 15px 18px
+	background: transparent
+	+clr
+	.jack__right
+		float: right
+		width: 105px 
+		padding-top: 17px 
+		.jack__sum
+			font-size: 12px 
+			font-weight: 900
+			color: #222222  
+			display: block
+			text-align: center
+			margin-bottom: 6px 
+		.jack__spil
+			@extend %button
+			display: block
+			text-align: center
+			display: none
+			cursor: pointer
+	.jack__text
+		width: 144px
+		float: left 
+		font-size: 11px 
+		font-weight: 500
+		color: #222222  
+		padding-top: 15px 
+	.jack__game
+		font-family: serif 
+		color: #b8b8b8 
+		font-style: italic 
+		margin-top: 2px 
+	.jack__icon
+		float: left
+		margin-right: 42px 
+	
+	&:hover
+		background: #c3c5c5 
+		.jack__right
+			.jack__spil
+				display: block

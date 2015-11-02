@@ -1,9 +1,194 @@
 // Normally mainpage styles
 // body
 // 	+s(coderiver)
-div
-	+r(1024)
-		display: block
-p
-	+r(1024)
-		background: red
+.in
+	width: 870px
+	margin: 0 auto
+	+clr
+	position: relative
+%button
+	height: 27px
+	line-height: 27px
+	padding: 0 18px
+	display: inline-block
+	text-decoration: none
+	font-size: 10px
+	color: #fff
+	background: #224ea2
+	border-radius: 27px
+%button1
+	@extend %button
+	background: transparent
+	color: #1e4590
+	box-shadow: inset 0 0 0 2px #1e4590
+	&:visited
+		color: #1e4590 
+	&:hover
+		color: #fff
+		background: #1e4590
+body
+	font-family: 'Lato', sans-serif
+.header
+	background: #224ea2
+	height: 72px
+	.header__logo
+		+s(logo)
+		float: left
+		margin-top: 25px
+
+	.header__menu
+		margin-top: 29px
+		margin-right: 24px
+		float: left
+		margin-left: 28px
+		.header__menu-icon
+			// +s(ham)
+			color: #fff 
+			font-size: 16px 
+			display: inline-block
+			cursor: pointer
+	.header__nemid
+		float: left
+		margin-left: 113px
+		margin-top: 16px
+		i
+			+s(nemid)
+			display: inline-block
+			vertical-align: middle
+		span
+			display: inline-block
+			vertical-align: middle
+			font-size: 11px
+			color: #fff
+			margin-left: 4px
+.header__drop
+	background: #222222 
+	width: 218px 
+	top: 0
+	height: 433px  
+	position: absolute
+	z-index: 200
+	top: 72px  
+	margin-left: -28px 
+	+box
+	padding: 23px 23px 0 28px 
+	border-right: 1px solid #2C2C2C 
+	&:before
+		background: #222222 
+		// background: red 
+		content: "" 
+		position: absolute
+		left: 28px 
+		top: -2px 
+		transform: rotate(45deg)
+		width: 15px 
+		height: 15px 
+	h3
+		font-size: 13px 
+		color: #ffffff 
+		font-weight: 900 
+		text-transform: uppercase
+		margin-bottom: 8px 
+	ul
+		list-style: none
+		font-size: 10px 
+		color: #cecece 
+		li
+			margin-bottom: 8px 
+		a
+			color: #cecece 
+			text-decoration: none
+		&.vip
+			padding: 20px 0
+			border-top: 1px solid #2C2C2C  
+			border-bottom: 1px solid #2C2C2C 
+			margin-top: 20px 
+			li
+				margin-bottom: 9px 
+			a
+				font-size: 12px  
+				font-weight: 900 
+				color: #fff 
+				text-transform: uppercase
+				&:hover
+					color: #3aecca 
+	.header__location
+		font-size: 12px 
+		color: #FFF 
+		margin-top: 14px 
+		i
+			+s(location) 
+			vertical-align: middle
+			margin-right: 6px 
+			display: inline-block
+			position: relative
+			top: -2px 
+.user
+	height: 32px
+	float: right
+	margin-top: 20px
+	margin-right: 10px
+	font-size: 0
+	a
+		text-decoration: none
+		display: inline-block
+		font-size: 12px
+		color: #222222
+		padding: 0 15px
+		height: 32px
+		line-height: 32px
+		background: #ffffff
+		border-right: 1px solid #E2E2E2
+		&:hover
+			background-color: #fafafa
+		&:last-child
+			border: none
+			border-top-right-radius: 32px
+			border-bottom-right-radius: 32px
+		&:first-child
+			border-top-left-radius: 32px
+			border-bottom-left-radius: 32px
+
+
+.topslider
+	background: #030f1d
+	&__prev,&__next
+		position: absolute
+		top: 50%
+		left: 23px
+		font-size: 30px
+		color: #fff
+		margin-top: -15px
+		cursor: pointer
+		z-index: 10
+		&:hover
+			margin-top: -14px
+	&__next
+		left: auto
+		right: 23px
+	&__slide
+		height: 433px
+		position: relative
+		background-position: -30px 0
+	&__text
+		margin-left: 415px
+		padding-top: 100px
+		color: #fff
+		font-size: 14px
+		font-weight: 300
+		strong
+			font-weight: 900
+			text-transform: uppercase
+			font-size: 11px
+			margin-bottom: 10px
+			display: block
+		h2
+			font-size: 43px
+			font-weight: 900
+			color: #ffffff
+			line-height: 1.2
+			margin-bottom: 20px
+		p
+			margin-bottom: 22px
+	&__button
+		@extend %button
