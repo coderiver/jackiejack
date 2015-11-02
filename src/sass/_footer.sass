@@ -76,14 +76,19 @@
 	position: relative
 	.signup__go
 		position: absolute
-		right: 12px 
+		right: 12px
 		top: 6px
 		appearance: none
 		background: transparent 
+		span
+			@extend %icon 
+			@extend .icon-arrow_1
+			color: #bcbcbc 
+			font-size: 8px 
 	&__icon
 		position: absolute
 		left: 14px 
-		top: 8px 
+		top: 7px 
 		color: #b3b3b3 
 	input[type=text]
 		position: absolute

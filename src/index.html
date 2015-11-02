@@ -199,24 +199,38 @@
 		<!-- begin games  -->
 		<div class="games">
 			<div class="gnav">
-				<div class="gnav__section">
+				<div class="gnav__section" data-section="1">
 					<div class="gnav__iconwrap"><i class="gnav__icon icon-heart-arrow"></i></div>
 					<h3 class="gnav__title">Top listet</h3>
 				</div>
-				<div class="gnav__section is-active">
+				<div class="gnav__section is-active" data-section="2">
 					<div class="gnav__iconwrap"><i class="gnav__icon icon-joystick"></i></div>
 					<h3 class="gnav__title">Spilleautomater</h3>
 				</div>
-				<div class="gnav__section">
+				<div class="gnav__section" data-section="3">
 					<div class="gnav__iconwrap"><i class="gnav__icon icon-card-heart"></i></div>
 					<h3 class="gnav__title">Klassiskt Casino</h3>
 				</div>
-				<div class="gnav__section">
+				<div class="gnav__section" data-section="4">
 					<div class="gnav__iconwrap"><i class="gnav__icon icon-bag-dollar"></i></div>
 					<h3 class="gnav__title">Jackpots</h3>
 				</div>
 			</div>
-			<div class="gamewrap">
+			<div class="gamewrap" id="gamewrap1" style="display:none">
+				<!-- begin game  -->
+				<a href='#' class="game game_top">
+					<img src="img/gametop.png" alt="">
+					<div class="game__over">
+						<span class="game__title">Hook’s Heroes</span>
+						<div class="game__icon"></div>
+						<span class="game__spilnu">SPIL NU</span>
+						<div class="game__play">Spil demo</div>
+					</div>
+				</a>
+				<!-- end game -->
+			</div>
+			<!-- end gamewrap -->
+			<div class="gamewrap" id="gamewrap2">
 				<!-- begin game  -->
 				<a href='#' class="game">
 					<img src="img/game.png" alt="">
@@ -350,6 +364,45 @@
 				</a>
 				<!-- end game -->
 			</div>
+			<div class="gamewrap" id="gamewrap3" style="display:none">
+				<!-- begin game  -->
+				<a href='#' class="game">
+					<img src="img/game.png" alt="">
+					<div class="game__over">
+						<span class="game__title">Hook’s Heroes</span>
+						<div class="game__icon"></div>
+						<span class="game__spilnu">SPIL NU</span>
+						<div class="game__play">Spil demo</div>
+					</div>
+				</a>
+				<!-- end game -->
+			</div>
+			<!-- end gamewrap -->
+			<div class="gamewrap" id="gamewrap4" style="display:none">
+				<!-- begin game  -->
+				<a href='#' class="game">
+					<img src="img/game.png" alt="">
+					<div class="game__over">
+						<span class="game__title">Hook’s Heroes</span>
+						<div class="game__icon"></div>
+						<span class="game__spilnu">SPIL NU</span>
+						<div class="game__play">Spil demo</div>
+					</div>
+				</a>
+				<!-- end game -->
+				<!-- begin game  -->
+				<a href='#' class="game">
+					<img src="img/game.png" alt="">
+					<div class="game__over">
+						<span class="game__title">Hook’s Heroes</span>
+						<div class="game__icon"></div>
+						<span class="game__spilnu">SPIL NU</span>
+						<div class="game__play">Spil demo</div>
+					</div>
+				</a>
+				<!-- end game -->
+			</div>
+			<!-- end gamewrap -->
 		</div>
 		<!-- end games -->
 
@@ -357,9 +410,60 @@
 		<div class="jackpots">
 			<h3>Million Jackpot challenge Jackpot</h3>
 			<span class="jackpots__text">Jackpots</span>
-			<div class="jackpots__number">
+			<div class="jackpots__number" id="jackpot-amount">
 				1,923,816.45 kr
 			</div>
+			<script type="application/javascript">var jackpotValue = 2017804.4488867; var jackpotAverageAmount = 6.7333; var currencySign = 'kr';</script>
+			<script type="application/javascript">
+				globalLocale = 'en';
+				function number_format(number, decimals, dec_point, thousands_sep) {
+				    number = (number + '')
+				        .replace(/[^0-9+\-Ee.]/g, '');
+				    var n = !isFinite(+number) ? 0 : +number,
+				        prec = !isFinite(+decimals) ? 2 : Math.abs(decimals),
+				        sep, dec;
+
+				    if(globalLocale && globalLocale === 'en')
+				    {
+				        sep = (typeof thousands_sep === 'undefined') ? ',' : thousands_sep;
+				        dec = (typeof dec_point === 'undefined') ? '.' : dec_point;
+				    }else
+				    {
+				        sep = (typeof thousands_sep === 'undefined') ? '.' : thousands_sep;
+				        dec = (typeof dec_point === 'undefined') ? ',' : dec_point;
+				    }
+
+				    var s = '',
+				        toFixedFix = function (n, prec) {
+				            var k = Math.pow(10, prec);
+				            return '' + (Math.round(n * k) / k)
+				                .toFixed(prec);
+				        };
+				    // Fix for IE parseFloat(0.55).toFixed(0) = 0;
+				    s = (prec ? toFixedFix(n, prec) : '' + Math.round(n))
+				        .split('.');
+				    if (s[0].length > 3) {
+				        s[0] = s[0].replace(/\B(?=(?:\d{3})+(?!\d))/g, sep);
+				    }
+				    if ((s[1] || '')
+				            .length < prec) {
+				        s[1] = s[1] || '';
+				        s[1] += new Array(prec - s[1].length + 1)
+				            .join('0');
+				    }
+				    return s.join(dec);
+				}
+			    var currencyFormat = ":amount :currency";
+			    $(function(){
+			        $.getScript('/jackpot.txt', function(){
+			            var jackpot = parseFloat(jackpotValue);
+			            var element = $('#jackpot-amount').html(currencyFormat.replace(":amount", number_format(jackpot)).replace(":currency", "<small>" + currencySign + "</small>"));
+			            var delta = jackpotAverageAmount/ 60.0 / 5.0;
+			            setInterval(function() { jackpot += delta; element.html(currencyFormat.replace(":amount", number_format(jackpot)).replace(":currency", "<small>" + currencySign + "</small>")); }, 100);
+			        });
+			    });
+			    </script>
+
 			<a href='#' class="jackpots__go">Se vores Jackpots</a>
 		</div>
 		<!-- end jackpots -->
@@ -551,7 +655,7 @@
 				<div class="signup">
 					<div class="signup__icon icon-envelope"></div>
 					<input type="text" name="" placeholder="Sign up fog få nyheder om nye bonuser" id="">
-					<input type="submit" value="->" class="signup__go">
+					<button class="signup__go"><span></span></button>
 				</div>
 				<p class="footer__copy">© 2015 Jackie Jackpot. All rights resrved.</p>
 			</div>

@@ -85,42 +85,58 @@
 		padding-top: 12px 
 		text-align: center
 		+box
+	.game__title
+		font-size: 11px 
+		color: #fff 
+		display: block 
+		margin-bottom: 7px 
+	.game__spilnu
+		font-weight: 900 
+		font-style: italic 
+		color: #fff 
+		font-size: 11px 
+		display: block
+		margin-bottom: 8px 
+	.game__icon
+		display: inline-block
+		width: 44px 
+		height: 44px 
+		border: 6px solid #168CD7 
+		border-radius: 50%
+		margin-bottom: 5px 
+		position: relative
+		&:before
+			content: "" 
+			position: absolute
+			+s(playmore)
+			left: 16px 
+			top: 13px 
+			
+	.game__play
+		height: 27px 
+		padding: 0 20px
+		line-height: 27px
+		font-style: italic 
+		font-family: serif
+		color: #868686  
+		background: #ececec 
+		border-radius: 20px
+		font-size: 11px 
+		display: inline-block
+	&.game_top
+		.game__over
+			padding-top: 22px 
 		.game__title
-			font-size: 11px 
-			color: #fff 
-			display: block 
-			margin-bottom: 7px 
-		.game__spilnu
-			font-weight: 900 
-			font-style: italic 
-			color: #fff 
-			font-size: 11px 
-			display: block
-			margin-bottom: 8px 
+			margin-bottom: 40px 
 		.game__icon
-			display: inline-block
-			width: 44px 
-			height: 44px 
-			border: 6px solid #168CD7 
-			border-radius: 50%
-			margin-bottom: 5px 
-			position: relative
+			width: 92px 
+			height: 92px 
+			margin-bottom: 4px 
 			&:before
-				content: "" 
-				position: absolute
-				+s(playmore)
-				left: 16px 
-				top: 13px 
-				
-		.game__play
-			height: 27px 
-			padding: 0 20px
-			line-height: 27px
-			font-style: italic 
-			font-family: serif
-			color: #868686  
-			background: #ececec 
-			border-radius: 20px
-			font-size: 11px 
-			display: inline-block
-				
+				+s(playmore1)
+				left: 32px 
+				top: 30px 
+		.game__spilnu
+			margin-bottom: 53px 
+			font-size: 14px 
+			font-weight: 900 

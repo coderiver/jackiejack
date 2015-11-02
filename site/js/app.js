@@ -43,6 +43,13 @@ $(document).ready(function() {
 		prevArrow: $('.promo__prev'),
 		nextArrow: $('.promo__next'),
 		autoplay: true,
-  		autoplaySpeed: 3000
+  		autoplaySpeed: 2000
 	})
+	$('.gnav__section').click(function(event) {
+		$(this).siblings().removeClass('is-active');
+		$(this).addClass('is-active');
+		$('.gamewrap').hide();
+		$('#gamewrap'+$(this).data('section')).show();
+		return false;
+	});
 });
