@@ -41,6 +41,8 @@ $(document).ready(function() {
 		arrows: true,
 		dots: false,
 		prevArrow: $('.promo__prev'),
-		nextArrow: $('.promo__next')
+		nextArrow: $('.promo__next'),
+		autoplay: true,
+  		autoplaySpeed: 3000
 	})
 });

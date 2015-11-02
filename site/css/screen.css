@@ -68,27 +68,23 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
 .icon-next:before { content: ""; }
 
-.icon-sepa:before { content: ""; }
-
-.icon-skrill:before { content: ""; }
-
 .icon-prev:before { content: ""; }
 
 .icon-menu:before { content: ""; }
 
 .icon-arrow:before, .jacks .jacks__top:before, .jacks .jacks__more i:before { content: ""; }
 
-.icon-bag-dollar:before { content: ""; }
-
-.icon-card-heart:before { content: ""; }
-
-.icon-heart-arrow:before { content: ""; }
-
-.icon-joystick:before { content: ""; }
-
 .icon-play:before, .promo .promo__slide .promo__icon.promo__video i:before { content: ""; }
 
-.icon-envelope:before { content: ""; }
+.icon-bag-dollar:before { content: ""; }
+
+.icon-card-heart:before { content: ""; }
+
+.icon-envelope:before { content: ""; }
+
+.icon-heart-arrow:before { content: ""; }
+
+.icon-joystick:before { content: ""; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
