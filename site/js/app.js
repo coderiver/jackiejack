@@ -28,9 +28,16 @@ $(document).ready(function() {
 	}, function() {
 		$('.header__drop').hide();
 	});
-	$('.js-menu').click(function(event) {
-		$('.header__drop').toggle();
+	$('.js-menu').hover(function() {
+		$('.header__drop').show();
+	}, function() {
+		/* Stuff to do when the mouse leaves the element */
 	});
+
+
+	// click(function(event) {
+	// 	$('.header__drop').toggle();
+	// });
 	$('.js-slider').slick({
 		slidesToShow: 1,
 	  	slidesToScroll: 1,

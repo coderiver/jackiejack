@@ -105,12 +105,12 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 body { font-family: "Lato", sans-serif; }
 
 .header { background: #224ea2; height: 72px; }
-.header .header__logo { background-image: url("../img/icons.png"); width: 167px; height: 24px; background-position: -156px -119px; float: left; margin-top: 25px; }
+.header .header__logo { background-image: url("../img/icons.png"); width: 167px; height: 24px; background-position: -156px -111px; float: left; margin-top: 25px; }
 .header .header__menu { margin-top: 29px; margin-right: 24px; float: left; margin-left: 28px; }
 .header .header__menu:hover .header__menu-icon { color: #000; }
 .header .header__menu .header__menu-icon { color: #fff; font-size: 16px; display: inline-block; cursor: pointer; }
 .header .header__nemid { float: left; margin-left: 113px; margin-top: 16px; }
-.header .header__nemid i { background-image: url("../img/icons.png"); width: 138px; height: 42px; background-position: -123px -160px; display: inline-block; vertical-align: middle; }
+.header .header__nemid i { background-image: url("../img/icons.png"); width: 138px; height: 42px; background-position: -279px -50px; display: inline-block; vertical-align: middle; }
 .header .header__nemid span { display: inline-block; vertical-align: middle; font-size: 11px; color: #fff; margin-left: 4px; }
 
 .header__drop { background: #222222; width: 218px; top: 0; height: 433px; position: absolute; z-index: 200; top: 72px; margin-left: -28px; box-sizing: border-box; padding: 23px 23px 0 28px; border-right: 1px solid #2C2C2C; }
@@ -125,7 +125,7 @@ body { font-family: "Lato", sans-serif; }
 .header__drop ul.vip a:hover { color: #3aecca; }
 .header__drop ul.vip.vip_notop { border-top: none; padding-top: 0; padding-bottom: 0; border-bottom: none; }
 .header__drop .header__location { font-size: 12px; color: #FFF; margin-top: 14px; }
-.header__drop .header__location i { background-image: url("../img/icons.png"); width: 12px; height: 16px; background-position: -212px -221px; vertical-align: middle; margin-right: 6px; display: inline-block; position: relative; top: -2px; }
+.header__drop .header__location i { background-image: url("../img/icons.png"); width: 12px; height: 16px; background-position: -327px -111px; vertical-align: middle; margin-right: 6px; display: inline-block; position: relative; top: -2px; }
 
 .user { height: 32px; float: right; margin-top: 20px; margin-right: 10px; font-size: 0; }
 .user a { text-decoration: none; display: inline-block; font-size: 12px; color: #222222; padding: 0 15px; height: 32px; line-height: 32px; background: #ffffff; border-right: 1px solid #E2E2E2; }
@@ -146,19 +146,20 @@ body { font-family: "Lato", sans-serif; }
 .subheader { background: #f0f0f0; }
 .subheader .in { border-bottom: 1px solid #ECECEC; }
 
-.support { width: 218px; float: left; border-left: 2px solid #E2E2E2; border-right: 1px solid #E2E2E2; padding-top: 35px; text-align: center; padding-bottom: 125px; background: url(../img/support.jpg) no-repeat 50% 100%; min-height: 217px; box-sizing: border-box; }
-.support h3 { font-size: 12px; font-weight: 900; text-transform: uppercase; color: #224ea2; margin-bottom: 10px; }
+.support { width: 218px; float: left; border-left: 2px solid #E2E2E2; border-right: 1px solid #E2E2E2; padding-top: 10px; text-align: center; min-height: 130px; box-sizing: border-box; }
+.support__img { width: 134px; height: 66px; background: url(../img/support.jpg) no-repeat 50% 100%; background-size: contain; margin: 0 auto; }
+.support h3 { font-size: 12px; font-weight: 900; text-transform: uppercase; color: #224ea2; margin-bottom: 0px; }
 .support .support__number { margin-right: 7px; }
 
-.responsive { float: left; border-right: 1px solid #e8e8e8; text-align: center; min-height: 217px; padding-top: 37px; width: 217px; box-sizing: border-box; }
+.responsive { float: left; border-right: 1px solid #e8e8e8; text-align: center; min-height: 130px; padding-top: 9px; width: 257px; box-sizing: border-box; }
 .responsive h3 { text-transform: uppercase; font-size: 10px; font-weight: 900; color: #224ea2; margin-bottom: 18px; }
-.responsive .responsive__image { background-image: url("../img/icons.png"); width: 119px; height: 57px; background-position: 0px -160px; opacity: 0.5; display: block; margin: 0 auto; }
-.responsive__more { font-size: 12px; color: #222222; text-decoration: none; display: inline-block; margin-top: 22px; }
+.responsive .responsive__image { background-image: url("../img/icons.png"); width: 119px; height: 57px; background-position: -156px -50px; opacity: 0.5; display: block; margin: 0 auto; }
+.responsive__more { font-size: 12px; color: #222222; text-decoration: none; display: inline-block; margin-top: 22px; display: none; }
 
-.pay { float: right; width: 416px; min-height: 217px; border-right: 2px solid #E5E5E5; padding-top: 50px; box-sizing: border-box; }
-.pay__icons { background-image: url("../img/icons.png"); width: 180px; height: 115px; background-position: -156px 0px; float: left; margin-right: 42px; }
+.pay { float: right; width: 386px; min-height: 130px; border-right: 2px solid #E5E5E5; padding-top: 10px; text-align: center; box-sizing: border-box; }
+.pay__icons { background-image: url("../img/icons.png"); width: 326px; height: 46px; background-position: -156px 0px; margin: 0 auto; display: block; margin-top: 10px; }
 .pay h3 { font-size: 10px; font-weight: 900; color: #224ea2; text-transform: uppercase; margin-bottom: 12px; }
-.pay p { font-size: 21px; color: #222222; }
+.pay p { font-size: 13px; color: #222222; }
 
 .promo .promo__in { border-bottom: 1px solid #E5E5E5; border-right: 2px solid #E5E5E5; border-left: 2px solid #E5E5E5; padding: 18px 70px 12px 70px; }
 .promo .promo__prev, .promo .promo__next { position: absolute; left: 20px; top: 40px; color: #dcdcdc; font-size: 30px; }
@@ -199,12 +200,12 @@ body { font-family: "Lato", sans-serif; }
 .game .game__title { font-size: 11px; color: #fff; display: block; margin-bottom: 7px; }
 .game .game__spilnu { font-weight: 900; font-style: italic; color: #fff; font-size: 11px; display: block; margin-bottom: 8px; }
 .game .game__icon { display: inline-block; width: 44px; height: 44px; border: 6px solid #168CD7; border-radius: 50%; margin-bottom: 5px; position: relative; }
-.game .game__icon:before { content: ""; position: absolute; background-image: url("../img/icons.png"); width: 17px; height: 19px; background-position: -164px -242px; left: 16px; top: 13px; }
+.game .game__icon:before { content: ""; position: absolute; background-image: url("../img/icons.png"); width: 17px; height: 19px; background-position: -456px -50px; left: 16px; top: 13px; }
 .game .game__play { height: 27px; padding: 0 20px; line-height: 27px; font-style: italic; font-family: serif; color: #868686; background: #ececec; border-radius: 20px; font-size: 11px; display: inline-block; }
 .game.game_top .game__over { padding-top: 22px; }
 .game.game_top .game__title { margin-bottom: 40px; }
 .game.game_top .game__icon { width: 92px; height: 92px; margin-bottom: 4px; }
-.game.game_top .game__icon:before { background-image: url("../img/icons.png"); width: 31px; height: 33px; background-position: -265px -160px; left: 32px; top: 30px; }
+.game.game_top .game__icon:before { background-image: url("../img/icons.png"); width: 31px; height: 33px; background-position: -421px -50px; left: 32px; top: 30px; }
 .game.game_top .game__spilnu { margin-bottom: 53px; font-size: 14px; font-weight: 900; }
 
 .jackpots { background: #f4f5f7; padding-top: 34px; text-align: center; border-bottom: 1px solid #EDEDED; padding-bottom: 75px; overflow: hidden; position: relative; }
@@ -267,7 +268,7 @@ body { font-family: "Lato", sans-serif; }
 .footer .footer__about { float: left; width: 327px; margin-left: 50px; text-align: center; padding-top: 33px; }
 .footer .footer__about a { font-size: 11px; color: #bcbcbc; margin: 0 6px; text-decoration: none; }
 .footer .footer__about a:hover { color: #000; }
-.footer .footer__about .footer__logo { background-image: url("../img/icons.png"); width: 208px; height: 17px; background-position: 0px -221px; display: block; margin: 0 auto; margin-bottom: 22px; }
+.footer .footer__about .footer__logo { background-image: url("../img/icons.png"); width: 208px; height: 17px; background-position: -156px -139px; display: block; margin: 0 auto; margin-bottom: 22px; }
 .footer .footer__about .footer__copy { font-family: serif; color: #bcbcbc; font-style: italic; }
 
 .signup { margin: 26px 0 20px 0; background: #f6f6f6; height: 27px; line-height: normal; border-radius: 27px; position: relative; }

@@ -7,18 +7,25 @@
 	float: left
 	border-left: 2px solid #E2E2E2
 	border-right: 1px solid #E2E2E2
-	padding-top: 35px
+	padding-top: 10px
 	text-align: center
-	padding-bottom: 125px
-	background: url(../img/support.jpg) no-repeat 50% 100%
-	min-height: 217px
+	
+	min-height: 130px
 	+box
+	&__img
+		width: 134px 
+		height: 66px 
+		background: url(../img/support.jpg) no-repeat 50% 100%
+		-webkit-background-size: contain 
+		-o-background-size: contain 
+		background-size: contain 
+		margin: 0 auto 
 	h3
 		font-size: 12px
 		font-weight: 900
 		text-transform: uppercase
 		color: #224ea2
-		margin-bottom: 10px
+		margin-bottom: 0px
 	.support__number
 		@extend %button
 		margin-right: 7px
@@ -28,9 +35,9 @@
 	float: left
 	border-right: 1px solid #e8e8e8
 	text-align: center
-	min-height: 217px
-	padding-top: 37px
-	width: 217px
+	min-height: 130px
+	padding-top: 9px
+	width: 257px
 	+box
 	h3
 		text-transform: uppercase
@@ -49,17 +56,20 @@
 		text-decoration: none
 		display: inline-block
 		margin-top: 22px
+		display: none
 .pay
 	float: right
-	width: 416px
-	min-height: 217px
+	width: 386px
+	min-height: 130px
 	border-right: 2px solid #E5E5E5
-	padding-top: 50px
+	padding-top: 10px
+	text-align: center
 	+box
 	&__icons
 		+s(pay)
-		float: left
-		margin-right: 42px
+		margin: 0 auto
+		display: block 
+		margin-top: 10px 
 	h3
 		font-size: 10px
 		font-weight: 900
@@ -67,5 +77,5 @@
 		text-transform: uppercase
 		margin-bottom: 12px
 	p
-		font-size: 21px
+		font-size: 13px
 		color: #222222
