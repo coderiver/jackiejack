@@ -47,7 +47,10 @@ $(document).ready(function() {
 		prevArrow: $('.topslider__prev'),
 		nextArrow: $('.topslider__next'),
 		autoplay: true,
-  		autoplaySpeed: 5000
+  		autoplaySpeed: 5000,
+  		fade: true,
+  		cssEase: 'linear',
+  		 speed: 1000,
 	})
 	$('.js-promo').slick({
 		slidesToShow: 3,
