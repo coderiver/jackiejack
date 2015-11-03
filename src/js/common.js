@@ -1,4 +1,10 @@
 $(document).ready(function() {
+
+	$('.header').hover(function() {
+		/* Stuff to do when the mouse enters the element */
+	}, function() {
+		$('.header__drop').hide();
+	});
 	$('.js-menu').click(function(event) {
 		$('.header__drop').toggle();
 	});
