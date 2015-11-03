@@ -22,7 +22,9 @@ $(document).ready(function() {
 		arrows: true,
 		dots: true,
 		prevArrow: $('.topslider__prev'),
-		nextArrow: $('.topslider__next')
+		nextArrow: $('.topslider__next'),
+		autoplay: true,
+  		autoplaySpeed: 5000
 	})
 	$('.js-promo').slick({
 		slidesToShow: 3,
