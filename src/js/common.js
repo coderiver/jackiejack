@@ -1,5 +1,25 @@
 $(document).ready(function() {
 
+	winnerTopList = [{"winnerName":"Test T.","currencySymbol":"$","winAmount":"5850.00","timestamp":"17/11 - 11:58 GMT","gameName":"Millionaire Club 3","gameLogoSmall":"//cdn.jackiejackpot.com/games/fallbackSmallGameLogo.jpg","gameLogoBig":"//cdn.jackiejackpot.com/games/fallbackBigGameLogo.jpg","countryCode":"GB","currencyFactor":1,"currencyAlignment":"L"},{"winnerName":"Andreas C.","currencySymbol":"£","winAmount":"5128.00","timestamp":"17/11 - 22:47 GMT","gameName":"Foxin wins again","gameLogoSmall":"//cdn.jackiejackpot.com/games/fallbackSmallGameLogo.jpg","gameLogoBig":"//cdn.jackiejackpot.com/games/fallbackBigGameLogo.jpg","countryCode":"GB","currencyFactor":1,"currencyAlignment":"L"},{"winnerName":"Lisa C.","currencySymbol":"$","winAmount":"4540.00","timestamp":"18/11 - 02:02 GMT","gameName":"Reel Rush","gameLogoSmall":"//cdn.jackiejackpot.com/games/fallbackSmallGameLogo.jpg","gameLogoBig":"//cdn.jackiejackpot.com/games/fallbackBigGameLogo.jpg","countryCode":"AU","currencyFactor":1,"currencyAlignment":"L"},{"winnerName":"Tero H.","currencySymbol":"?","winAmount":"4501.00","timestamp":"17/11 - 13:07 GMT","gameName":"Gonzo\u0027s Quest","gameLogoSmall":"//cdn.jackiejackpot.com/games/fallbackSmallGameLogo.jpg","gameLogoBig":"//cdn.jackiejackpot.com/games/fallbackBigGameLogo.jpg","countryCode":"FI","currencyFactor":1,"currencyAlignment":"L"},{"winnerName":"Sami L.","currencySymbol":"?","winAmount":"3061.00","timestamp":"17/11 - 10:38 GMT","gameName":"Steam Tower","gameLogoSmall":"//cdn.jackiejackpot.com/games/fallbackSmallGameLogo.jpg","gameLogoBig":"//cdn.jackiejackpot.com/games/fallbackBigGameLogo.jpg","countryCode":"FI","currencyFactor":1,"currencyAlignment":"L"},{"winnerName":"Maroun E.","currencySymbol":"$","winAmount":"2770.50","timestamp":"17/11 - 14:28 GMT","gameName":"Jack and the Beanstalk","gameLogoSmall":"//cdn.jackiejackpot.com/games/fallbackSmallGameLogo.jpg","gameLogoBig":"//cdn.jackiejackpot.com/games/fallbackBigGameLogo.jpg","countryCode":"AE","currencyFactor":1,"currencyAlignment":"L"},{"winnerName":"Nina J.","currencySymbol":"kr","winAmount":"26070.00","timestamp":"17/11 - 20:47 GMT","gameName":"Gonzo\u0027s Quest","gameLogoSmall":"//cdn.jackiejackpot.com/games/fallbackSmallGameLogo.jpg","gameLogoBig":"//cdn.jackiejackpot.com/games/fallbackBigGameLogo.jpg","countryCode":"NO","currencyFactor":10,"currencyAlignment":"R"},{"winnerName":"Rahim M.","currencySymbol":"kr","winAmount":"25330.00","timestamp":"17/11 - 23:44 GMT","gameName":"FUNtastic Pets","gameLogoSmall":"//cdn.jackiejackpot.com/games/fallbackSmallGameLogo.jpg","gameLogoBig":"//cdn.jackiejackpot.com/games/fallbackBigGameLogo.jpg","countryCode":"SE","currencyFactor":10,"currencyAlignment":"R"},{"winnerName":"Nadia V.","currencySymbol":"?","winAmount":"2435.00","timestamp":"17/11 - 23:35 GMT","gameName":"Reel Rush","gameLogoSmall":"//cdn.jackiejackpot.com/games/fallbackSmallGameLogo.jpg","gameLogoBig":"//cdn.jackiejackpot.com/games/fallbackBigGameLogo.jpg","countryCode":"FR","currencyFactor":1,"currencyAlignment":"L"},{"winnerName":"Pascal R.","currencySymbol":"?","winAmount":"2038.00","timestamp":"17/11 - 17:51 GMT","gameName":"Subtopia","gameLogoSmall":"//cdn.jackiejackpot.com/games/fallbackSmallGameLogo.jpg","gameLogoBig":"//cdn.jackiejackpot.com/games/fallbackBigGameLogo.jpg","countryCode":"FR","currencyFactor":1,"currencyAlignment":"L"}];
+	var html = '';
+	// console.log(winnerTopList);
+	$.each(winnerTopList, function(index) {
+	    // console.log(winnerTopList[index].gameLogoSmall);
+	    html += '<div class="promo__slide"><div class="promo__icon">';
+	    html += '<img src="http:'+winnerTopList[index].gameLogoSmall+'" alt="">';
+	    html += '</div>';
+	    html += '<div class="promo__text">';
+	    html += '<div class="promo__price">'+winnerTopList[index].winAmount+'</div>';
+	    html += '<h3 class="promo__title">'+winnerTopList[index].winnerName+'</h3>';
+	    html += '<span class="promo__date">'+winnerTopList[index].timestamp+'</span>';
+	    html += '<div class="promo__game">'+winnerTopList[index].gameName+'</div>';
+	    html += '</div></div>';
+	});
+	// console.log(html);
+	$('.js-promo').html(html);
+
+
+
 	$('.header').hover(function() {
 		/* Stuff to do when the mouse enters the element */
 	}, function() {
