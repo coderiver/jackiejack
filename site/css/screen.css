@@ -261,8 +261,9 @@ body { font-family: "Lato", sans-serif; }
 .footer__bottom { border-top: 1px solid #EFEFEF; text-align: center; font-size: 9px; color: #868686; line-height: 1.1; padding: 18px 20px 20px 20px; }
 .footer__top { *zoom: 1; }
 .footer__top:after { content: " "; display: table; clear: both; }
-.footer__icons { float: right; width: 217px; min-height: 215px; text-align: center; padding-top: 25px; border-left: 2px solid #fafafa; box-sizing: border-box; }
-.footer__icons .footer__iconsimg { background-image: url("../img/icons.png"); width: 156px; height: 199px; background-position: 0px 0px; display: inline-block; }
+.footer__icons { float: right; width: 242px; min-height: 215px; text-align: center; padding-top: 25px; border-left: 2px solid #fafafa; box-sizing: border-box; }
+.footer__icons .footer__iconsimg { background: none; text-align: center; display: inline-block; }
+.footer__icons .footer__iconsimg img { vertical-align: middle; margin: 5px 10px; }
 .footer__help { width: 217px; border-right: 2px solid #fafafa; min-height: 215px; padding: 24px 0 0 27px; float: left; box-sizing: border-box; }
 .footer__help h3 { font-size: 11px; font-weight: 900; color: #000; text-transform: uppercase; margin-bottom: 14px; }
 .footer__help ul { list-style: none; color: #bcbcbc; }
