@@ -105,7 +105,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 body { font-family: "Lato", sans-serif; }
 
 .header { background: #224ea2; height: 72px; }
-.header .header__logo { background-image: url("../img/icons.png"); width: 219px; height: 32px; background-position: -160px -50px; float: left; margin-top: 25px; }
+.header .header__logo { background: url(../img/logo.svg) no-repeat 0 0; width: 219px; height: 32px; background-size: contain; float: left; margin-top: 25px; }
 .header .header__menu { margin-top: 29px; margin-right: 24px; float: left; margin-left: 28px; }
 .header .header__menu:hover .header__menu-icon { color: #000; }
 .header .header__menu .header__menu-icon { color: #fff; font-size: 16px; display: inline-block; cursor: pointer; }
