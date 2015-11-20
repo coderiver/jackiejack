@@ -125,7 +125,7 @@ body { font-family: "Lato", sans-serif; }
 .header__drop ul.vip a:hover { color: #3aecca; }
 .header__drop ul.vip.vip_notop { border-top: none; padding-top: 0; padding-bottom: 0; border-bottom: none; }
 .header__drop .header__location { font-size: 12px; color: #FFF; margin-top: 14px; }
-.header__drop .header__location i { background-image: url("../img/icons.png"); width: 12px; height: 16px; background-position: -331px -147px; vertical-align: middle; margin-right: 6px; display: inline-block; position: relative; top: -2px; }
+.header__drop .header__location i { background-image: url("../img/icons.png"); width: 12px; height: 16px; background-position: -347px -147px; vertical-align: middle; margin-right: 6px; display: inline-block; position: relative; top: -2px; }
 
 .user { height: 32px; float: right; margin-top: 20px; margin-right: 10px; font-size: 0; }
 .user a { text-decoration: none; display: inline-block; font-size: 12px; color: #222222; padding: 0 15px; height: 32px; line-height: 32px; background: #ffffff; border-right: 1px solid #E2E2E2; }
@@ -195,6 +195,7 @@ body { font-family: "Lato", sans-serif; }
 .gamewrap:after { content: " "; display: table; clear: both; }
 
 .game { float: left; width: 25%; position: relative; text-decoration: none; border-bottom: 1px solid #ECECEC; box-sizing: border-box; }
+.game.is-empty { background: #eaeaec url(../img/empty.png) no-repeat 50% 50%; }
 .game:nth-child(4n):before { display: none; }
 .game .game__over { display: none; }
 .game img { display: block; width: 100%; }
@@ -258,6 +259,12 @@ body { font-family: "Lato", sans-serif; }
 .support24__buttons a { min-width: 110px; text-align: center; margin-left: 10px; box-sizing: border-box; }
 
 .footer .in { box-shadow: inset 2px 0 0 #f4f4f4, inset -2px 0 0 #f4f4f4; }
+.footer__location:before { content: " "; display: inline-block; margin-right: 8px; background-image: url("../img/icons.png"); width: 12px; height: 16px; background-position: -331px -147px; opacity: 0.5; position: relative; top: 2px; }
+.footer__logos { text-align: center; padding: 19px 0; border-top: 1px solid #efefef; }
+.footer__logos img { vertical-align: middle; margin: 0 5px; }
+.footer__logos br { display: none; }
+.footer__copy { text-align: center; font-size: 9px; color: #868686; line-height: 1.2; padding-top: 23px; border-top: 1px solid #efefef; padding-bottom: 15px; }
+.footer__copy strong { display: block; font-size: 11px; font-family: Georgia, serif; font-style: italic; font-weight: normal; text-align: center; margin-top: 15px; }
 .footer__bottom { border-top: 1px solid #EFEFEF; text-align: center; font-size: 9px; color: #868686; line-height: 1.1; padding: 18px 20px 20px 20px; }
 .footer__top { *zoom: 1; }
 .footer__top:after { content: " "; display: table; clear: both; }
@@ -270,11 +277,10 @@ body { font-family: "Lato", sans-serif; }
 .footer__help ul li { margin-bottom: 12px; }
 .footer__help ul a { color: #bcbcbc; text-decoration: none; }
 .footer__help ul a:hover { color: #000; text-decoration: underline; }
-.footer .footer__about { float: left; width: 327px; margin-left: 50px; text-align: center; padding-top: 33px; }
+.footer .footer__about { text-align: center; padding-top: 33px; padding-bottom: 20px; }
 .footer .footer__about a { font-size: 11px; color: #bcbcbc; margin: 0 6px; text-decoration: none; }
 .footer .footer__about a:hover { color: #000; }
 .footer .footer__about .footer__logo { background-image: url("../img/icons.png"); width: 208px; height: 17px; background-position: -160px -175px; display: block; margin: 0 auto; margin-bottom: 22px; }
-.footer .footer__about .footer__copy { font-family: serif; color: #bcbcbc; font-style: italic; }
 
 .signup { margin: 26px 0 20px 0; background: #f6f6f6; height: 27px; line-height: normal; border-radius: 27px; position: relative; }
 .signup .signup__go { position: absolute; right: 12px; top: 6px; -webkit-appearance: none; -moz-appearance: none; appearance: none; background: transparent; }

@@ -1,6 +1,40 @@
 .footer
 	.in
 		box-shadow: inset 2px 0 0 #f4f4f4,inset -2px 0 0 #f4f4f4
+	&__location
+		&:before
+			content: ' '
+			display: inline-block
+			margin-right: 8px 
+			+s(locationwhite)
+			opacity: .5
+			position: relative
+			top: 2px   
+	&__logos
+		text-align: center
+		padding: 19px 0 
+		border-top: 1px solid #efefef 
+		img
+			vertical-align: middle
+			margin: 0 5px 
+		br
+			display: none
+	&__copy
+		text-align: center
+		font-size: 9px 
+		color: #868686
+		line-height: 1.2
+		padding-top: 23px 
+		border-top: 1px solid #efefef 
+		padding-bottom: 15px 
+		strong
+			display: block
+			font-size: 11px 
+			font-family: Georgia,serif
+			font-style: italic
+			font-weight: normal
+			text-align: center
+			margin-top: 15px  
 	&__bottom
 		border-top: 1px solid #EFEFEF 
 		text-align: center
@@ -51,11 +85,9 @@
 					color: #000
 					text-decoration: underline
 	.footer__about
-		float: left
-		width: 327px 
-		margin-left: 50px 
 		text-align: center
 		padding-top: 33px 
+		padding-bottom: 20px 
 		a
 			font-size: 11px 
 			color: #bcbcbc 
@@ -68,10 +100,6 @@
 			display: block
 			margin:  0 auto 
 			margin-bottom: 22px 
-		.footer__copy
-			font-family: serif 
-			color: #bcbcbc 
-			font-style: italic
 .signup
 	margin: 26px 0 20px 0 
 	background: #f6f6f6
