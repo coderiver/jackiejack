@@ -224,11 +224,12 @@ body { font-family: "Lato", sans-serif; }
 .jacks .jacks__top { position: absolute; right: 26px; top: 30px; font-size: 30px; color: #ededed; -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); }
 .jacks .col { float: left; width: 50%; position: relative; box-sizing: border-box; border-right: 1px solid #DDD; padding-top: 31px; padding-bottom: 20px; }
 .jacks h2 { margin-bottom: 13px; text-align: center; font-size: 16px; font-weight: 900; color: #224ea2; text-transform: uppercase; }
-.jacks .jacks__more { text-align: right; margin-right: 30px; font-size: 11px; font-style: italic; color: #b8b8b8; font-family: serif; }
+.jacks .jacks__more { text-align: right; margin-right: 30px; font-size: 11px; font-style: italic; color: #b8b8b8; font-family: serif; cursor: pointer; }
 .jacks .jacks__more i { vertical-align: middle; display: inline-block; margin-left: 10px; font-size: 30px; color: #ededed; -webkit-transform: rotate(-90deg); -ms-transform: rotate(-90deg); transform: rotate(-90deg); }
 
 .jack { padding: 12px 30px 15px 18px; background: transparent; *zoom: 1; }
 .jack:after { content: " "; display: table; clear: both; }
+.jack.is-hidden { display: none; }
 .jack .jack__right { float: right; width: 105px; padding-top: 17px; }
 .jack .jack__right .jack__sum { font-size: 12px; font-weight: 900; color: #222222; display: block; text-align: center; margin-bottom: 6px; }
 .jack .jack__right .jack__spil { display: block; text-align: center; display: none; cursor: pointer; }

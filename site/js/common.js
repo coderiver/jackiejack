@@ -20,6 +20,42 @@ $(document).ready(function() {
 
 
 
+	// latest winner 7 days, 30 days
+	$.getJSON( "/winnersLast7days.json", function( data ) {
+		console.log(data);
+	  	putjson(data,'weekly')
+	});
+	$.getJSON( "/winnersLast30days.json", function( data ) {
+	  	putjson(data,'yearly')
+	});
+
+
+	function putjson(json,id){
+		html = ' ';
+		i = 0;
+		$.each( json, function( index) {
+			// items.push( "<li id='" + key + "'>" + val + "</li>" );
+			i = i +1;
+			hiddenclass = ' ';
+			if(i>4){hiddenclass = ' is-hidden';}
+			html += '<div class="jack '+hiddenclass+'">';
+			html += '	<div class="jack__icon">';
+			html += '		<img src="'+json[index].gameLogoSmall+'" width="73" height="73" alt="">';
+			html += '	</div>';
+			html += '	<div class="jack__text">';
+			html += '		<h3>'+json[index].winnerName+'<br>'+json[index].timestamp+'</h3>';
+			html += '		<div class="jack__game">'+json[index].gameName+'</div>';
+			html += '	</div>';
+			html += '	<div class="jack__right">';
+			html += '		<div class="jack__sum">'+json[index].winAmount+' kr</div>';
+			html += '		<div class="jack__spil">Spil nu</div>';
+			html += '	</div>';
+			html += '</div>';
+		});
+		$('#'+id).html(html);
+	}
+
+
 	$('.header').hover(function() {
 		/* Stuff to do when the mouse enters the element */
 	}, function() {
@@ -31,7 +67,11 @@ $(document).ready(function() {
 		/* Stuff to do when the mouse leaves the element */
 	});
 
-
+	$('.jacks__more').click(function(event) {
+		$(this).hide();
+		$(this).parent().find('.is-hidden').show();
+		return false;
+	});
 	// click(function(event) {
 	// 	$('.header__drop').toggle();
 	// });
