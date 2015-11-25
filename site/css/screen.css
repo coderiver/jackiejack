@@ -166,17 +166,16 @@ body { font-family: "Lato", sans-serif; }
 .pay p { font-size: 13px; color: #222222; }
 
 .promo .promo__in { border-bottom: 1px solid #E5E5E5; border-right: 2px solid #E5E5E5; border-left: 2px solid #E5E5E5; padding: 18px 70px 12px 70px; }
-.promo .promo__prev, .promo .promo__next { position: absolute; left: 20px; top: 40px; color: #dcdcdc; font-size: 30px; }
+.promo .promo__prev, .promo .promo__next { position: absolute; left: 20px; top: 33px; color: #dcdcdc; font-size: 30px; }
 .promo .promo__prev:hover, .promo .promo__next:hover { color: #000; }
 .promo .promo__next { position: absolute; right: 20px; left: auto; -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); }
 .promo .promo__slide { display: inline-block; width: 245px; box-sizing: border-box; padding-right: 10px; }
-.promo .promo__slide .promo__icon { float: left; margin-right: 12px; }
+.promo .promo__slide .promo__icon { float: left; margin-right: 12px; width: 94px; height: 58px; background-size: cover; background-position: 50% 50%; border-radius: 10px; background-color: #ccc; }
 .promo .promo__slide .promo__icon.promo__video { position: relative; }
 .promo .promo__slide .promo__icon.promo__video:before { background: rgba(46, 94, 173, 0.5); content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 10; border-radius: 10px; }
 .promo .promo__slide .promo__icon.promo__video i { position: absolute; left: 20px; top: 20px; z-index: 20; color: #fff; font-size: 33px; }
-.promo .promo__slide .promo__text { padding-top: 5px; }
 .promo .promo__slide .promo__price { font-size: 12px; font-weight: 900; color: #222222; margin-bottom: 1px; }
-.promo .promo__slide .promo__title { color: #222222; font-size: 11px; white-space: nowrap; font-weight: 600; }
+.promo .promo__slide .promo__title { color: #222222; font-size: 11px; white-space: nowrap; font-weight: 600; line-height: 1; }
 .promo .promo__slide .promo__date { display: inline-block; font-size: 11px; }
 .promo .promo__slide .promo__game { font-family: serif; color: #b8b8b8; display: inline-block; margin-top: 2px; font-style: italic; font-size: 11px; }
 
@@ -194,19 +193,20 @@ body { font-family: "Lato", sans-serif; }
 .gamewrap { *zoom: 1; }
 .gamewrap:after { content: " "; display: table; clear: both; }
 
-.game { float: left; width: 25%; position: relative; text-decoration: none; border-bottom: 1px solid #ECECEC; box-sizing: border-box; }
+.game { float: left; width: 25%; position: relative; text-decoration: none; border-bottom: 1px solid #ECECEC; height: 140px; overflow: hidden; box-sizing: border-box; }
 .game.is-empty { background: #eaeaec url(../img/empty.png) no-repeat 50% 50%; }
 .game:nth-child(4n):before { display: none; }
 .game .game__over { display: none; }
 .game img { display: block; width: 100%; }
 .game:before { content: ""; position: absolute; right: 0; width: 2px; height: 100%; background: #ececec; }
 .game:hover .game__over { display: block; }
-.game .game__over { display: none; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: rgba(34, 78, 162, 0.95); padding-top: 12px; text-align: center; box-sizing: border-box; }
-.game .game__title { font-size: 11px; color: #fff; display: block; margin-bottom: 7px; }
-.game .game__spilnu { font-weight: 900; font-style: italic; color: #fff; font-size: 11px; display: block; margin-bottom: 8px; }
-.game .game__icon { display: inline-block; width: 44px; height: 44px; border: 6px solid #168CD7; border-radius: 50%; margin-bottom: 5px; position: relative; }
+.game .game__over { display: none; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: rgba(34, 78, 162, 0.95); padding-top: 4px; text-align: center; box-sizing: border-box; }
+.game .game__title { font-size: 11px; color: #fff; display: block; margin-bottom: 4px; }
+.game .game__spilnu { font-weight: 900; font-style: italic; color: #fff; font-size: 11px; display: block; margin-bottom: 5px; }
+.game .game__icon { display: inline-block; width: 44px; height: 44px; border: 6px solid #168CD7; border-radius: 50%; margin-bottom: 3px; position: relative; }
 .game .game__icon:before { content: ""; position: absolute; background-image: url("../img/icons.png"); width: 17px; height: 19px; background-position: -460px -86px; left: 16px; top: 13px; }
 .game .game__play { height: 27px; padding: 0 20px; line-height: 27px; font-style: italic; font-family: serif; color: #868686; background: #ececec; border-radius: 20px; font-size: 11px; display: inline-block; }
+.game.game_top { height: auto; }
 .game.game_top .game__over { padding-top: 22px; }
 .game.game_top .game__title { margin-bottom: 40px; }
 .game.game_top .game__icon { width: 92px; height: 92px; margin-bottom: 4px; }
@@ -229,7 +229,6 @@ body { font-family: "Lato", sans-serif; }
 
 .jack { padding: 12px 30px 15px 18px; background: transparent; *zoom: 1; }
 .jack:after { content: " "; display: table; clear: both; }
-.jack.is-hidden { display: none; }
 .jack .jack__right { float: right; width: 105px; padding-top: 17px; }
 .jack .jack__right .jack__sum { font-size: 12px; font-weight: 900; color: #222222; display: block; text-align: center; margin-bottom: 6px; }
 .jack .jack__right .jack__spil { display: block; text-align: center; display: none; cursor: pointer; }

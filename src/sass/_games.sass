@@ -46,6 +46,8 @@
 	position: relative 
 	text-decoration: none
 	border-bottom: 1px solid #ECECEC 
+	height: 140px 
+	overflow: hidden
 	+box
 	&.is-empty
 		background: #eaeaec url(../img/empty.png) no-repeat 50% 50% 
@@ -76,28 +78,28 @@
 		width: 100% 
 		height: 100%
 		background: rgba(#224EA2,.95)
-		padding-top: 12px 
+		padding-top: 4px 
 		text-align: center
 		+box
 	.game__title
 		font-size: 11px 
 		color: #fff 
 		display: block 
-		margin-bottom: 7px 
+		margin-bottom: 4px 
 	.game__spilnu
 		font-weight: 900 
 		font-style: italic 
 		color: #fff 
 		font-size: 11px 
 		display: block
-		margin-bottom: 8px 
+		margin-bottom: 5px 
 	.game__icon
 		display: inline-block
 		width: 44px 
 		height: 44px 
 		border: 6px solid #168CD7 
 		border-radius: 50%
-		margin-bottom: 5px 
+		margin-bottom: 3px 
 		position: relative
 		&:before
 			content: "" 
@@ -118,6 +120,7 @@
 		font-size: 11px 
 		display: inline-block
 	&.game_top
+		height: auto 
 		.game__over
 			padding-top: 22px 
 		.game__title
