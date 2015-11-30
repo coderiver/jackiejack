@@ -48,8 +48,8 @@ $(document).ready(function() {
 			hiddenclass = ' ';
 			if(i>4){hiddenclass = ' is-hidden';}
 			html += '<div class="jack '+hiddenclass+'">';
-			html += '	<div class="jack__icon">';
-			html += '		<img src="'+json[index].gameLogoSmall+'" width="73" height="73" alt="">';
+			html += '	<div class="jack__icon" style="background-image: url('+json[index].gameLogoSmall+')">';
+			html += '		';
 			html += '	</div>';
 			html += '	<div class="jack__text">';
 			html += '		<h3>'+json[index].winnerName+'<br>'+json[index].timestamp+'</h3>';

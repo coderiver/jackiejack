@@ -229,12 +229,12 @@ body { font-family: "Lato", sans-serif; }
 
 .jack { padding: 12px 30px 15px 18px; background: transparent; *zoom: 1; }
 .jack:after { content: " "; display: table; clear: both; }
-.jack .jack__right { float: right; width: 105px; padding-top: 17px; }
+.jack .jack__right { float: right; width: 105px; padding-top: 7px; }
 .jack .jack__right .jack__sum { font-size: 12px; font-weight: 900; color: #222222; display: block; text-align: center; margin-bottom: 6px; }
 .jack .jack__right .jack__spil { display: block; text-align: center; display: none; cursor: pointer; }
-.jack .jack__text { width: 144px; float: left; font-size: 11px; font-weight: 500; color: #222222; padding-top: 15px; }
+.jack .jack__text { width: 124px; float: left; font-size: 11px; font-weight: 500; color: #222222; padding-top: 5px; }
 .jack .jack__game { font-family: serif; color: #b8b8b8; font-style: italic; margin-top: 2px; }
-.jack .jack__icon { float: left; margin-right: 42px; }
+.jack .jack__icon { float: left; margin-right: 42px; width: 94px; height: 58px; border-radius: 10px; background-size: cover; background-color: #ccc; }
 .jack:hover { background: #c3c5c5; }
 .jack:hover .jack__right .jack__spil { display: block; }
 
