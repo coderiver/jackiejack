@@ -13,6 +13,10 @@
 	min-height: 130px
 	position: relative
 	+box
+	.l &
+		float: none
+		width: auto
+		border: none 
 	&__img
 		// width: 134px 
 		// height: 66px 
@@ -57,6 +61,14 @@
 	padding-top: 16px
 	width: 227px
 	+box
+	.l &
+		float: none
+		border-right: none 
+		display: block
+		float: none
+		padding-top: 33px 
+		padding-bottom: 30px 
+		width: auto
 	h3
 		text-transform: uppercase
 		font-size: 10px
@@ -84,6 +96,13 @@
 	padding-top: 10px
 	text-align: center
 	+box
+	.l &
+		width: auto
+		float: none
+		border-top: 1px solid #d6d6d6 
+		border-bottom: 1px solid #d6d6d6 
+		padding-top: 25px 
+		padding-bottom: 35px 
 	&__icons
 		+s(pay)
 		margin: 0 auto
@@ -95,6 +114,8 @@
 			display: inline-block
 			margin: 0 8px 
 			transform: scale(.8)
+			.l &
+				margin: 0 6px 
 		img
 			vertical-align: middle
 			
