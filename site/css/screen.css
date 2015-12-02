@@ -90,9 +90,11 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
 .icon-Spille-automat:before { content: ""; }
 
-.l { width: 870px; position: relative; overflow: hidden; }
+.content .in_wide { width: 988px; }
+
+.l { width: 988px; position: relative; overflow: hidden; }
 .l:after { content: ""; position: absolute; height: 100%; top: 0; right: 218px; border-left: 1px solid #d6d6d6; }
-.l .l-col1 { float: left; width: 652px; }
+.l .l-col1 { float: left; width: 770px; }
 .l .l-col2 { float: right; width: 218px; }
 
 .in { width: 870px; margin: 0 auto; *zoom: 1; position: relative; }
