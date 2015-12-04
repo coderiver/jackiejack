@@ -137,7 +137,8 @@ body { font-family: "Lato", sans-serif; }
 .user a:last-child { border: none; border-top-right-radius: 32px; border-bottom-right-radius: 32px; }
 .user a:first-child { border-top-left-radius: 32px; border-bottom-left-radius: 32px; }
 
-.topslider { background: #030f1d; }
+.topslider { background: #030f1d; position: relative; }
+.topslider > .in { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
 .topslider__prev, .topslider__next { position: absolute; top: 50%; left: 23px; font-size: 30px; color: #fff; margin-top: -15px; cursor: pointer; z-index: 10; }
 .topslider__prev:hover, .topslider__next:hover { color: #224ea2; }
 .topslider__next { left: auto; right: 23px; }
