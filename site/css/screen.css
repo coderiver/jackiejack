@@ -100,7 +100,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .in { width: 870px; margin: 0 auto; *zoom: 1; position: relative; }
 .in:after { content: " "; display: table; clear: both; }
 
-.support .support__number, .support .support__chat, .jackpots .jackpots__go, .challenge .challenge__button, .support24__buttons a, .topslider__button, .promo .promo__btn, .jack .jack__right .jack__spil, .bonus .bonus__button { height: 27px; line-height: 27px; padding: 0 18px; display: inline-block; text-decoration: none; font-size: 10px; color: #fff; background: #224ea2; border-radius: 27px; }
+.support .support__number, .support .support__chat, .jackpots .jackpots__go, .challenge .challenge__button, .support24__buttons a, .topslider__button, .promo .promo__slide .promo__btn, .jack .jack__right .jack__spil, .bonus .bonus__button { height: 27px; line-height: 27px; padding: 0 18px; display: inline-block; text-decoration: none; font-size: 10px; color: #fff; background: #224ea2; border-radius: 27px; }
 
 .support .support__number, .support .support__chat, .jackpots .jackpots__go, .challenge .challenge__button, .support24__buttons a { background: transparent; color: #1e4590; box-shadow: inset 0 0 0 2px #1e4590; }
 .support .support__number:visited, .support .support__chat:visited, .jackpots .jackpots__go:visited, .challenge .challenge__button:visited, .support24__buttons a:visited { color: #1e4590; }
@@ -177,10 +177,10 @@ body { font-family: "Lato", sans-serif; }
 .promo .promo__in { border-bottom: 1px solid #E5E5E5; border-right: 2px solid #E5E5E5; border-left: 2px solid #E5E5E5; padding: 18px 70px 12px 70px; }
 .promo .promo__prev, .promo .promo__next { position: absolute; left: 20px; top: 33px; color: #dcdcdc; font-size: 30px; }
 .promo .promo__prev:hover, .promo .promo__next:hover { color: #000; }
-.promo .promo__btn { position: absolute; top: 0; bottom: 0; left: 15px; margin: auto; display: block; }
 .promo .promo__next { position: absolute; right: 20px; left: auto; -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); }
 .promo .promo__slide { display: inline-block; width: 245px; box-sizing: border-box; padding-right: 10px; position: relative; }
-.promo .promo__slide .promo__icon { float: left; margin-right: 12px; width: 94px; height: 58px; background-size: cover; background-position: 50% 50%; border-radius: 10px; background-color: #ccc; }
+.promo .promo__slide:hover .promo__btn { display: block; }
+.promo .promo__slide .promo__icon { float: left; margin-right: 12px; width: 94px; height: 58px; background-size: cover; background-position: 50% 50%; border-radius: 10px; background-color: #ccc; position: relative; }
 .promo .promo__slide .promo__icon.promo__video { position: relative; }
 .promo .promo__slide .promo__icon.promo__video:before { background: rgba(46, 94, 173, 0.5); content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 10; border-radius: 10px; }
 .promo .promo__slide .promo__icon.promo__video i { position: absolute; left: 20px; top: 20px; z-index: 20; color: #fff; font-size: 33px; }
@@ -188,6 +188,7 @@ body { font-family: "Lato", sans-serif; }
 .promo .promo__slide .promo__title { color: #222222; font-size: 11px; white-space: nowrap; font-weight: 600; line-height: 1; }
 .promo .promo__slide .promo__date { display: inline-block; font-size: 11px; }
 .promo .promo__slide .promo__game { font-family: serif; color: #b8b8b8; display: inline-block; margin-top: 2px; font-style: italic; font-size: 11px; }
+.promo .promo__slide .promo__btn { position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; display: none; width: 40px; text-align: center; }
 
 .content { background: #2250a7; }
 .content .in { background: #fff; }

@@ -6,13 +6,13 @@ $(document).ready(function() {
 		$.each(winnerTopList, function(index) {
 		    // console.log(winnerTopList[index].gameLogoSmall);
 		    html += '<div class="promo__slide"><div class="promo__icon" style="background-image: url('+winnerTopList[index].gameLogoSmall+');">';
+		    html += '<div class="promo__btn">Spil nu</div>';
 		    html += '</div>';
 		    html += '<div class="promo__text">';
 		    html += '<div class="promo__price">'+winnerTopList[index].winAmount+'</div>';
 		    html += '<h3 class="promo__title">'+winnerTopList[index].winnerName+'</h3>';
 		    html += '<span class="promo__date">'+winnerTopList[index].timestamp+'</span>';
 		    html += '<div class="promo__game">'+winnerTopList[index].gameName+'</div>';
-		    html += '<div class="promo__btn">Spil nu</div>';
 		    html += '</div></div>';
 		});
 		// console.log(html);

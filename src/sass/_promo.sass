@@ -25,15 +25,6 @@
 		// 	margin-left: -4px 
 		&:hover
 			color: #000 
-	.promo__btn
-		@extend %button
-		position: absolute
-		top: 0
-		bottom: 0
-		left: 15px
-		margin: auto
-		display: block
-		//display: none
 	.promo__next
 		position: absolute
 		right: 20px
@@ -47,6 +38,9 @@
 		+box
 		padding-right: 10px
 		position: relative
+		&:hover
+			.promo__btn
+				display: block
 		.promo__icon
 			float: left
 			margin-right: 12px
@@ -55,7 +49,8 @@
 			background-size: cover
 			background-position: 50% 50%
 			border-radius: 10px
-			background-color: #ccc   
+			background-color: #ccc
+			position: relative
 			&.promo__video
 				position: relative
 				&:before
@@ -101,3 +96,14 @@
 			margin-top: 2px 
 			font-style: italic 
 			font-size: 11px 
+		.promo__btn
+			@extend %button
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			margin: auto
+			display: none
+			width: 40px
+			text-align: center
