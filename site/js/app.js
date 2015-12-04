@@ -35,6 +35,7 @@ $(document).ready(function() {
 		    html += '<h3 class="promo__title">'+winnerTopList[index].winnerName+'</h3>';
 		    html += '<span class="promo__date">'+winnerTopList[index].timestamp+'</span>';
 		    html += '<div class="promo__game">'+winnerTopList[index].gameName+'</div>';
+		    html += '<div class="promo__btn">Spil nu</div>';
 		    html += '</div></div>';
 		});
 		// console.log(html);

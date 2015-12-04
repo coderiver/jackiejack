@@ -25,6 +25,15 @@
 		// 	margin-left: -4px 
 		&:hover
 			color: #000 
+	.promo__btn
+		@extend %button
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 15px
+		margin: auto
+		display: block
+		//display: none
 	.promo__next
 		position: absolute
 		right: 20px
@@ -36,7 +45,8 @@
 		display: inline-block
 		width: 245px 
 		+box
-		padding-right: 10px 
+		padding-right: 10px
+		position: relative
 		.promo__icon
 			float: left
 			margin-right: 12px
