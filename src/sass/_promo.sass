@@ -39,6 +39,16 @@
 		padding-right: 10px
 		position: relative
 		&:hover
+			.promo__icon
+				&:before
+					position: absolute
+					left: 0
+					top: 0
+					right: 0
+					bottom: 0    
+					border-radius: 10px
+					background: rgba(34, 78, 162, 0.95) 
+					content: ' ' 
 			.promo__btn
 				display: block
 		.promo__icon
@@ -107,3 +117,5 @@
 			display: none
 			width: 40px
 			text-align: center
+			background: #ececec
+			color: #8c8c8c  

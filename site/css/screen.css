@@ -179,6 +179,7 @@ body { font-family: "Lato", sans-serif; }
 .promo .promo__prev:hover, .promo .promo__next:hover { color: #000; }
 .promo .promo__next { position: absolute; right: 20px; left: auto; -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); }
 .promo .promo__slide { display: inline-block; width: 245px; box-sizing: border-box; padding-right: 10px; position: relative; }
+.promo .promo__slide:hover .promo__icon:before { position: absolute; left: 0; top: 0; right: 0; bottom: 0; border-radius: 10px; background: rgba(34, 78, 162, 0.95); content: " "; }
 .promo .promo__slide:hover .promo__btn { display: block; }
 .promo .promo__slide .promo__icon { float: left; margin-right: 12px; width: 94px; height: 58px; background-size: cover; background-position: 50% 50%; border-radius: 10px; background-color: #ccc; position: relative; }
 .promo .promo__slide .promo__icon.promo__video { position: relative; }
@@ -188,7 +189,7 @@ body { font-family: "Lato", sans-serif; }
 .promo .promo__slide .promo__title { color: #222222; font-size: 11px; white-space: nowrap; font-weight: 600; line-height: 1; }
 .promo .promo__slide .promo__date { display: inline-block; font-size: 11px; }
 .promo .promo__slide .promo__game { font-family: serif; color: #b8b8b8; display: inline-block; margin-top: 2px; font-style: italic; font-size: 11px; }
-.promo .promo__slide .promo__btn { position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; display: none; width: 40px; text-align: center; }
+.promo .promo__slide .promo__btn { position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; display: none; width: 40px; text-align: center; background: #ececec; color: #8c8c8c; }
 
 .content { background: #2250a7; }
 .content .in { background: #fff; }
