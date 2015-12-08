@@ -142,7 +142,7 @@ body { font-family: "Lato", sans-serif; }
 .topslider__prev, .topslider__next { position: absolute; top: 50%; left: 23px; font-size: 30px; color: #fff; margin-top: -15px; cursor: pointer; z-index: 10; }
 .topslider__prev:hover, .topslider__next:hover { color: #224ea2; }
 .topslider__next { left: auto; right: 23px; }
-.topslider__slide { height: 433px; position: relative; background-position: 50%; }
+.topslider__slide { height: 433px; position: relative; background-position: 50%; background-repeat: no-repeat; }
 .topslider__text { margin-left: 415px; padding-top: 100px; color: #fff; font-size: 14px; font-weight: 300; }
 .topslider__text strong { font-weight: 900; text-transform: uppercase; font-size: 11px; margin-bottom: 10px; display: block; }
 .topslider__text h2 { font-size: 43px; font-weight: 900; color: #ffffff; line-height: 1.2; margin-bottom: 20px; }
