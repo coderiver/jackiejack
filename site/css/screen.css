@@ -117,6 +117,14 @@ body { font-family: "Lato", sans-serif; }
 .header .header__nemid i { background-image: url("../img/icons.png"); width: 138px; height: 42px; background-position: -283px -86px; display: inline-block; vertical-align: middle; }
 .header .header__nemid span { display: inline-block; vertical-align: middle; font-size: 11px; color: #fff; margin-left: 4px; }
 
+.header__lang { position: absolute; right: 200px; top: 20px; z-index: 30; }
+.header__lang.is-open .header__langdrop { display: block; }
+.header__lang .header__langdrop { position: absolute; top: 37px; width: 60px; background: #222; border-radius: 10px; padding: 10px; width: 100%; box-sizing: border-box; display: none; }
+.header__lang .header__langdrop a { color: #fff; text-decoration: none; }
+.header__lang .header__langdrop:before { background: #222222; content: ""; position: absolute; left: 28px; top: -2px; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); width: 15px; height: 15px; }
+.header__lang .header__langvalue { border-radius: 32px; background: #222222; color: #fff; text-decoration: none; height: 32px; line-height: 32px; font-size: 12px; padding: 0 15px; cursor: pointer; }
+.header__lang .header__langvalue i { font-size: 60%; margin-left: 4px; font-style: normal; }
+
 .header__drop { background: #222222; width: 218px; top: 0; height: 433px; position: absolute; z-index: 200; top: 72px; margin-left: -28px; box-sizing: border-box; padding: 23px 23px 0 28px; border-right: 1px solid #2C2C2C; }
 .header__drop:before { background: #222222; content: ""; position: absolute; left: 28px; top: -2px; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); width: 15px; height: 15px; }
 .header__drop h3 { font-size: 13px; color: #ffffff; font-weight: 900; text-transform: uppercase; margin-bottom: 8px; }
@@ -138,6 +146,9 @@ body { font-family: "Lato", sans-serif; }
 .user a:first-child { border-top-left-radius: 32px; border-bottom-left-radius: 32px; }
 
 .topslider { background: #030f1d; position: relative; }
+.topslider .bottomrightlink__wrap { width: 870px; margin: 0 auto; position: absolute; left: 50%; margin-left: -435px; bottom: 0; }
+.topslider .bottomrightlink { position: absolute; bottom: 0; right: 0; z-index: 20; color: #fff; }
+.topslider a { text-decoration: none; display: block; }
 .topslider > .in { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
 .topslider__prev, .topslider__next { position: absolute; top: 50%; left: 23px; font-size: 30px; color: #fff; margin-top: -15px; cursor: pointer; z-index: 10; }
 .topslider__prev:hover, .topslider__next:hover { color: #224ea2; }

@@ -22,7 +22,7 @@
 	color: #1e4590
 	box-shadow: inset 0 0 0 2px #1e4590
 	&:visited
-		color: #1e4590 
+		color: #1e4590
 	&:hover
 		color: #fff
 		background: #1e4590
@@ -32,9 +32,9 @@ body
 	background: #224ea2
 	height: 72px
 	.header__logo
-		background: url(../img/logo.svg) no-repeat 0 0 
-		width: 219px 
-		height: 32px 
+		background: url(../img/logo.svg) no-repeat 0 0
+		width: 219px
+		height: 32px
 		background-size: contain
 		float: left
 		margin-top: 25px
@@ -46,11 +46,11 @@ body
 		margin-left: 28px
 		&:hover
 			.header__menu-icon
-				color: #000 
+				color: #000
 		.header__menu-icon
 			// +s(ham)
-			color: #fff 
-			font-size: 16px 
+			color: #fff
+			font-size: 16px
 			display: inline-block
 			cursor: pointer
 	.header__nemid
@@ -67,73 +67,119 @@ body
 			font-size: 11px
 			color: #fff
 			margin-left: 4px
+.header__lang
+	position: absolute
+	right: 200px 
+	top: 20px
+	z-index: 30 
+	&.is-open
+		.header__langdrop
+			display: block
+	.header__langdrop
+		position: absolute
+		top: 37px 
+		width: 60px 
+		background: #222 
+		border-radius: 10px 
+		padding: 10px
+		width: 100%
+		+box 
+		display: none
+		a
+			color: #fff 
+			text-decoration: none
+		&:before
+			background: #222222
+			// background: red
+			content: ""
+			position: absolute
+			left: 28px
+			top: -2px
+			transform: rotate(45deg)
+			width: 15px
+			height: 15px
+	
+	.header__langvalue
+		border-radius: 32px 
+		background: #222222  
+		color: #fff 
+		text-decoration: none
+		height: 32px
+		line-height: 32px  
+		font-size: 12px 
+		padding: 0 15px 
+		cursor: pointer
+		i
+			font-size: 60%
+			margin-left: 4px  
+			font-style: normal 
 .header__drop
-	background: #222222 
-	width: 218px 
+	background: #222222
+	width: 218px
 	top: 0
-	height: 433px  
+	height: 433px
 	position: absolute
 	z-index: 200
-	top: 72px  
-	margin-left: -28px 
+	top: 72px
+	margin-left: -28px
 	+box
-	padding: 23px 23px 0 28px 
-	border-right: 1px solid #2C2C2C 
+	padding: 23px 23px 0 28px
+	border-right: 1px solid #2C2C2C
 	&:before
-		background: #222222 
-		// background: red 
-		content: "" 
+		background: #222222
+		// background: red
+		content: ""
 		position: absolute
-		left: 28px 
-		top: -2px 
+		left: 28px
+		top: -2px
 		transform: rotate(45deg)
-		width: 15px 
-		height: 15px 
+		width: 15px
+		height: 15px
 	h3
-		font-size: 13px 
-		color: #ffffff 
-		font-weight: 900 
+		font-size: 13px
+		color: #ffffff
+		font-weight: 900
 		text-transform: uppercase
-		margin-bottom: 8px 
+		margin-bottom: 8px
 	ul
 		list-style: none
-		font-size: 10px 
-		color: #cecece 
+		font-size: 10px
+		color: #cecece
 		li
-			margin-bottom: 8px 
+			margin-bottom: 8px
 		a
-			color: #cecece 
+			color: #cecece
 			text-decoration: none
 		&.vip
 			padding: 20px 0
-			border-top: 1px solid #2C2C2C  
-			border-bottom: 1px solid #2C2C2C 
-			margin-top: 20px 
+			border-top: 1px solid #2C2C2C
+			border-bottom: 1px solid #2C2C2C
+			margin-top: 20px
 			li
-				margin-bottom: 9px 
+				margin-bottom: 9px
 			a
-				font-size: 12px  
-				font-weight: 900 
-				color: #fff 
+				font-size: 12px
+				font-weight: 900
+				color: #fff
 				text-transform: uppercase
 				&:hover
-					color: #3aecca 
+					color: #3aecca
 			&.vip_notop
 				border-top: none
-				padding-top: 0  
+				padding-top: 0
 				padding-bottom: 0
-				border-bottom: none  
+				border-bottom: none
 	.header__location
-		font-size: 12px 
-		color: #FFF 
-		margin-top: 14px 
+		font-size: 12px
+		color: #FFF
+		margin-top: 14px
 		i
-			+s(location) 
+			+s(location)
 			vertical-align: middle
-			margin-right: 6px 
+			margin-right: 6px
 			display: inline-block
 			position: relative
-			top: -2px 
+			top: -2px
 .user
 	height: 32px
 	float: right
@@ -164,6 +210,23 @@ body
 .topslider
 	background: #030f1d
 	position: relative
+	.bottomrightlink__wrap
+		width: 870px 
+		margin: 0 auto
+		position: absolute
+		left: 50%
+		margin-left: -435px   
+		bottom: 0 
+	.bottomrightlink
+		position: absolute
+		bottom: 0
+		right: 0
+		// background: red   
+		z-index: 20 
+		color: #fff 
+	a
+		text-decoration: none
+		display: block
 	> .in
 		position: absolute
 		top: 0
@@ -182,7 +245,7 @@ body
 		z-index: 10
 		&:hover
 			// margin-top: -14px
-			color: #224ea2 
+			color: #224ea2
 	&__next
 		left: auto
 		right: 23px
@@ -191,7 +254,7 @@ body
 		position: relative
 		// background-position: -30px 0
 		background-position: 50%
-		background-repeat: no-repeat 
+		background-repeat: no-repeat
 	&__text
 		margin-left: 415px
 		padding-top: 100px

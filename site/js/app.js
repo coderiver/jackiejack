@@ -24,6 +24,13 @@ return new Za.prototype.init(a,b,c,d,e)}m.Tween=Za,Za.prototype={constructor:Za,
 $(document).ready(function() {
 
 
+
+	$.getJSON( "/in.json", function( inst ) {
+		// console.log(inst[0]);
+		$.each(inst, function(index) {
+			console.log(inst.data[0].images.standard_resolution.url);
+		});
+	});
 	$.getJSON( "/winnerslast10.json", function( winnerTopList ) {
 		var html = '';
 		$.each(winnerTopList, function(index) {
@@ -145,5 +152,8 @@ $(document).ready(function() {
 		$('.gamewrap').hide();
 		$('#gamewrap'+$(this).data('section')).show();
 		return false;
+	});
+	$('.header__lang').click(function(event) {
+		$(this).toggleClass('is-open');
 	});
 });
