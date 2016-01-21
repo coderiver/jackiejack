@@ -114,7 +114,8 @@ body { font-family: "Lato", sans-serif; }
 .header .header__menu:hover .header__menu-icon { color: #000; }
 .header .header__menu .header__menu-icon { color: #fff; font-size: 16px; display: inline-block; cursor: pointer; }
 .header .header__nemid { float: left; margin-left: 113px; margin-top: 16px; }
-.header .header__nemid i { background-image: url("../img/icons.png"); width: 138px; height: 42px; background-position: -283px -86px; display: inline-block; vertical-align: middle; }
+.header .header__nemid .icon1 { background-image: url("../img/icons.png"); width: 93px; height: 42px; background-position: 0px -203px; display: inline-block; vertical-align: middle; }
+.header .header__nemid .icon2 { background-image: url("../img/icons.png"); width: 44px; height: 42px; background-position: -425px -86px; display: inline-block; vertical-align: middle; }
 .header .header__nemid span { display: inline-block; vertical-align: middle; font-size: 11px; color: #fff; margin-left: 4px; }
 
 .header__lang { position: absolute; right: 200px; top: 20px; z-index: 30; }
@@ -137,7 +138,7 @@ body { font-family: "Lato", sans-serif; }
 .header__drop ul.vip a:hover { color: #3aecca; }
 .header__drop ul.vip.vip_notop { border-top: none; padding-top: 0; padding-bottom: 0; border-bottom: none; }
 .header__drop .header__location { font-size: 12px; color: #FFF; margin-top: 14px; }
-.header__drop .header__location i { background-image: url("../img/icons.png"); width: 12px; height: 16px; background-position: -347px -147px; vertical-align: middle; margin-right: 6px; display: inline-block; position: relative; top: -2px; }
+.header__drop .header__location i { background-image: url("../img/icons.png"); width: 12px; height: 16px; background-position: -473px -106px; vertical-align: middle; margin-right: 6px; display: inline-block; position: relative; top: -2px; }
 
 .user { height: 32px; float: right; margin-top: 20px; margin-right: 10px; font-size: 0; }
 .user a { text-decoration: none; display: inline-block; font-size: 12px; color: #222222; padding: 0 15px; height: 32px; line-height: 32px; background: #ffffff; border-right: 1px solid #E2E2E2; }
@@ -227,13 +228,13 @@ body { font-family: "Lato", sans-serif; }
 .game .game__title { font-size: 11px; color: #fff; display: block; margin-bottom: 4px; }
 .game .game__spilnu { font-weight: 900; font-style: italic; color: #fff; font-size: 11px; display: block; margin-bottom: 5px; }
 .game .game__icon { display: inline-block; width: 44px; height: 44px; border: 6px solid #168CD7; border-radius: 50%; margin-bottom: 3px; position: relative; }
-.game .game__icon:before { content: ""; position: absolute; background-image: url("../img/icons.png"); width: 17px; height: 19px; background-position: -460px -86px; left: 16px; top: 13px; }
+.game .game__icon:before { content: ""; position: absolute; background-image: url("../img/icons.png"); width: 17px; height: 19px; background-position: -331px -147px; left: 16px; top: 13px; }
 .game .game__play { height: 27px; padding: 0 20px; line-height: 27px; font-style: italic; font-family: serif; color: #868686; background: #ececec; border-radius: 20px; font-size: 11px; display: inline-block; }
 .game.game_top { height: auto; }
 .game.game_top .game__over { padding-top: 22px; }
 .game.game_top .game__title { margin-bottom: 40px; }
 .game.game_top .game__icon { width: 92px; height: 92px; margin-bottom: 4px; }
-.game.game_top .game__icon:before { background-image: url("../img/icons.png"); width: 31px; height: 33px; background-position: -425px -86px; left: 32px; top: 30px; }
+.game.game_top .game__icon:before { background-image: url("../img/icons.png"); width: 31px; height: 33px; background-position: -97px -203px; left: 32px; top: 30px; }
 .game.game_top .game__spilnu { margin-bottom: 53px; font-size: 14px; font-weight: 900; }
 
 .jackpots { background: #f4f5f7; padding-top: 34px; text-align: center; border-bottom: 1px solid #EDEDED; padding-bottom: 75px; overflow: hidden; position: relative; }
@@ -283,7 +284,7 @@ body { font-family: "Lato", sans-serif; }
 .support24__buttons a { min-width: 110px; text-align: center; margin-left: 10px; box-sizing: border-box; }
 
 .footer .in { box-shadow: inset 2px 0 0 #f4f4f4, inset -2px 0 0 #f4f4f4; }
-.footer__location:before { content: " "; display: inline-block; margin-right: 8px; background-image: url("../img/icons.png"); width: 12px; height: 16px; background-position: -331px -147px; opacity: 0.5; position: relative; top: 2px; }
+.footer__location:before { content: " "; display: inline-block; margin-right: 8px; background-image: url("../img/icons.png"); width: 12px; height: 16px; background-position: -473px -86px; opacity: 0.5; position: relative; top: 2px; }
 .footer__logos { text-align: center; padding: 19px 0; border-top: 1px solid #efefef; }
 .footer__logos img { vertical-align: middle; margin: 0 5px; }
 .footer__logos br { display: none; }
